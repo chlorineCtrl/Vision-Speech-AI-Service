@@ -12,6 +12,11 @@ from typing import Literal
 Language = Literal["bn", "en", "auto"]
 
 
+class ProviderError(Exception):
+    """A provider could not produce a result.
+    """
+
+
 @dataclass(frozen=True)
 class Transcript:
     """What a transcription provider heard in one audio file.

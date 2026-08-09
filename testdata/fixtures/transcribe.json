@@ -1,0 +1,45 @@
+{
+  "note": "Recorded provider responses, keyed by audio filename. Placeholder text until step 51 replaces each entry with genuine Gemini output; provenance for every clip is in testdata/SOURCES.md. Replayed verbatim by the mock adapter, which does not enforce the silence contract - the service does that, so the fixtures can stay a faithful record of what a provider actually said.",
+  "clips": {
+    "bn_read_speech.wav": {
+      "text": "আমার নাম রহিম। আমি ঢাকায় থাকি এবং একটি অফিসে কাজ করি।",
+      "detected_language": "bn",
+      "speech_detected": true
+    },
+    "en_read_speech.wav": {
+      "text": "The patient was advised to repeat the test after two weeks.",
+      "detected_language": "en",
+      "speech_detected": true
+    },
+    "bn_en_code_switched.wav": {
+      "text": "আমি এখন একটা meeting এ আছি, please call me back after lunch.",
+      "detected_language": "bn",
+      "speech_detected": true
+    },
+    "noisy_phone_call.wav": {
+      "text": "হ্যালো, শুনতে পাচ্ছেন? আমি স্টেশন থেকে বলছি।",
+      "detected_language": "bn",
+      "speech_detected": true
+    },
+    "long_leading_pause.wav": {
+      "text": "Sorry for the delay, I am here now.",
+      "detected_language": "en",
+      "speech_detected": true
+    },
+    "silence_5s.wav": {
+      "text": "",
+      "detected_language": null,
+      "speech_detected": false
+    },
+    "ambient_room_20s.wav": {
+      "text": "",
+      "detected_language": null,
+      "speech_detected": false
+    },
+    "music_only.wav": {
+      "text": "",
+      "detected_language": null,
+      "speech_detected": false
+    }
+  }
+}
