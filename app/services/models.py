@@ -6,6 +6,10 @@ knows about HTTP, and nothing here knows which provider produced it.
 """
 
 from dataclasses import dataclass
+from typing import Literal
+
+
+Language = Literal["bn", "en", "auto"]
 
 
 @dataclass(frozen=True)
